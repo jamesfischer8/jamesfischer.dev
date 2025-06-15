@@ -40,10 +40,10 @@ function entryHtml(e) {
     e.needsApproval ? 'needs-approval' : ''
   ].join(' ').trim();
   const buttons = e.deleted
-    ? '<button class="undelete">Un-delete</button>'
+    ? '<button class="undelete">Un-delete</button> <button class="hard-delete">Hard delete</button>'
     : e.needsApproval
-      ? '<button class="approve">Approve</button> <button class="delete">Delete</button>'
-      : '<button class="delete">Delete</button>';
+      ? '<button class="approve">Approve</button> <button class="delete">Delete</button> <button class="hard-delete">Hard delete</button>'
+      : '<button class="delete">Delete</button> <button class="hard-delete">Hard delete</button>';
   return `<div class="${classes}" data-key="${e.key}">
     <div class="name-timestamp">
       <div class="name">${escapeHtml(e.name)}</div>
@@ -79,6 +79,18 @@ document.getElementById('entries').addEventListener('click', async e => {
       localStorage.removeItem('gbAdminSecret');
       alert('Unauthorized: Invalid admin secret. Please refresh the page to re-enter.');
     } else alert('Failed to delete');
+  } else if (e.target.classList.contains('hard-delete')) {
+    if (!confirm('Permanently delete this entry?')) return;
+    const res = await fetch('/api/guestbook-admin', {
+      method: 'DELETE',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ key, secret: adminSecret, hard: true })
+    });
+    if (res.ok) loadEntries();
+    else if (res.status === 403) {
+      localStorage.removeItem('gbAdminSecret');
+      alert('Unauthorized: Invalid admin secret. Please refresh the page to re-enter.');
+    } else alert('Failed to hard delete');
   } else if (e.target.classList.contains('undelete')) {
     const res = await fetch('/api/guestbook-admin', {
       method: 'PUT',

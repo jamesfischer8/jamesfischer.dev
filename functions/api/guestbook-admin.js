@@ -43,12 +43,16 @@ export async function onRequestGet({ request, env }) {
 
 export async function onRequestDelete({ request, env }) {
   try {
-    const { key, secret } = await request.json();
+    const { key, secret, hard } = await request.json();
     if (!key || !secret) {
       return new Response('Missing parameters', { status: 400 });
     }
     if (secret !== env.ADMIN_SECRET) {
       return new Response('Unauthorized', { status: 403 });
+    }
+    if (hard) {
+      await env.GUESTBOOK.delete(key);
+      return Response.json({ success: true });
     }
     const raw = await env.GUESTBOOK.get(key);
     if (!raw) {
