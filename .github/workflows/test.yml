@@ -25,6 +25,27 @@ jobs:
     - name: Run tests
       run: npm run test:coverage
 
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.4.4'
+
+    - name: Cache gems
+      uses: actions/cache@v4
+      with:
+        path: vendor/bundle
+        key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-gems-
+
+    - name: Install Ruby gems
+      run: |
+        bundle config set path vendor/bundle
+        bundle install --jobs 4 --retry 3
+
+    - name: Build site
+      run: bundle exec jekyll build
+
     - name: Upload coverage
       uses: actions/upload-artifact@v4
       with:
