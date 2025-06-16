@@ -4,9 +4,14 @@ Install the Ruby gems first:
 bundle install
 ```
 
-Install wrangler globally as well:
+This project uses Node.js 22 LTS. If you have nvm installed, you can run:
 ```
-npm install -g wrangler
+nvm use
+```
+
+Install dependencies:
+```
+npm install
 ```
 
 For working on the static site, run:
