@@ -4,6 +4,10 @@ import {
 
 export default defineWorkersConfig({
   test: {
+    coverage: {
+      provider: 'c8',
+      reporter: ['text', 'lcov'],
+    },
     poolOptions: {
       workers: {
         wrangler: { configPath: './wrangler.toml' },

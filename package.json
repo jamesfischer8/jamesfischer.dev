@@ -2,9 +2,9 @@
   "name": "jamesfischer-dev",
   "scripts": {
     "dev": "wrangler pages dev",
-    "test": "vitest",
+    "test": "vitest run",
     "test:ui": "vitest --ui",
-    "test:coverage": "vitest --coverage"
+    "test:coverage": "c8 vitest run"
   },
   "homepage": "https://jamesfischer.dev",
   "engines": {
@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.38",
+    "c8": "^10.1.3",
     "vitest": "^3.2.3",
     "wrangler": "^4.19.1"
   }

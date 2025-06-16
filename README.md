@@ -25,3 +25,8 @@ bundle exec jekyll build --watch
 
 npx wrangler pages dev
 ```
+
+To run tests with coverage locally, use:
+```
+npm run test:coverage
+```
