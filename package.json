@@ -7,6 +7,9 @@
     "test:coverage": "vitest --coverage"
   },
   "homepage": "https://jamesfischer.dev",
+  "engines": {
+    "node": ">=22.0.0"
+  },
   "devDependencies": {
     "@cloudflare/vitest-pool-workers": "^0.8.38",
     "vitest": "^3.2.3",
