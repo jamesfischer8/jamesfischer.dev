@@ -20,3 +20,14 @@ bundle exec jekyll build --watch
 
 npx wrangler pages dev
 ```
+
+# Testing
+Install the Node dependencies first:
+```
+npm install
+```
+
+Run the tests:
+```
+npm test
+```
