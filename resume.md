@@ -15,9 +15,9 @@ permalink: /resume/
 **Senior Engineering Manager**  
 *July 2024 - Present* <span id="current-role-duration"></span>
 
-Lead a group of 19 engineers across four subscription product teams—payments, churn, marketing, and new products.
+Lead a group of 20 engineers across four subscription product teams—payments, churn, marketing, and new products.
 
-- Scaled the Premium org from 8 → 19 engineers, adding a management layer and using DORA delivery metrics to surface and resolve process bottlenecks
+- Scaled the Premium org from 8 → 20 engineers, adding a management layer and using DORA delivery metrics to surface and resolve process bottlenecks
 - Hired one EM and promoted another while continuing to manage one team of 3 engineers directly
 - Grew subscription net receipts 24% YoY in Q1 2025 despite declining SEO traffic
 - Added installment billing, lifting payment success rate 15%
