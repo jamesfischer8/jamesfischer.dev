@@ -42,7 +42,7 @@ Managed 7–9 engineers across ~2 teams at a time. Teams included monetization, 
 **Senior Software Engineer**  
 *June 2020 - June 2021* (1 yr)
 
-Tech lead for our initial foray into open access publishing, Academia Letters. Built our manuscript tracking and rendering systems.
+Tech lead for our initial foray into open access publishing, Academia Letters. Built our manuscript tracking and typesetting systems.
 
 **Software Engineer**  
 *May 2018 - June 2020* (2 yrs 1 mo)
