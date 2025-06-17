@@ -8,6 +8,10 @@ permalink: /resume/
 
 **San Francisco, CA • (949) 433-1013 • [contact@jamesfischer.dev](mailto:contact@jamesfischer.dev)**
 
+## Summary
+
+Engineering leader who scales teams and revenue. I build high-performing teams that ground technical decisions in business outcomes.
+
 ## Experience
 
 ### Academia.edu • *San Francisco, CA*
