@@ -6,7 +6,7 @@ permalink: /resume/
 
 # [James Fischer](/)
 
-**San Francisco, CA • (949) 433-1013 • contact@jamesfischer.dev**
+**San Francisco, CA • (949) 433-1013 • [contact@jamesfischer.dev](mailto:contact@jamesfischer.dev)**
 
 ## Experience
 
