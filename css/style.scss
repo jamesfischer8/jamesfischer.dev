@@ -1,6 +1,14 @@
 ---
 ---
 
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
+  --border-color: #000;
+  --info-color: #333;
+  --remarks-color: #666;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +17,8 @@ body {
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-display: optional;
   margin: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 a, a:visited {
@@ -76,7 +86,7 @@ a, a:visited {
 
 .posts {
   margin: 72px 16px;
-  border-left: 1px solid black;
+  border-left: 1px solid var(--border-color);
   padding: 16px 0;
 }
 
@@ -121,7 +131,7 @@ a, a:visited {
   }
 
   .info {
-    color: #333;
+    color: var(--info-color);
     display: none;
   }
 
@@ -139,7 +149,7 @@ a, a:visited {
   }
 
   .remarks {
-    color: #666;
+    color: var(--remarks-color);
     margin: 6px 0;
   }
 
@@ -153,5 +163,15 @@ a, a:visited {
 
   .entry.needs-approval {
     background: #fff2be;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #121212;
+    --text-color: #eee;
+    --border-color: #eee;
+    --info-color: #ccc;
+    --remarks-color: #999;
   }
 }
