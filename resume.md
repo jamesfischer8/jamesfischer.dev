@@ -58,7 +58,7 @@ Kept our personal income tax engine up to date for many state tax regulations. A
 
 ## Skills
 
-Technical&nbsp;planning • Cross-functional&nbsp;collaboration • A/B&nbsp;testing • AI • Product&nbsp;engineering
+Technical&nbsp;planning • Hiring • Cross-functional&nbsp;collaboration • Growth • A/B&nbsp;testing • AI • Product&nbsp;engineering
 
 ## Education
 
