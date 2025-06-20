@@ -22,7 +22,7 @@ Engineering leader who scales teams and revenue. I build high-performing teams t
 Leading a group of 20 engineers across four subscription product teams—payments, churn, marketing, and new product development.
 
 - Scaled the Premium org from 8 → 20 engineers, adding a management layer and using DORA delivery metrics to surface and resolve process bottlenecks
-- Hired one EM and promoted another while continuing to manage one team of 3 engineers directly
+- Hired one EM and promoted another while continuing to manage one team of 4 engineers directly
 - Grew subscription net receipts 24% YoY in Q1 2025 despite declining SEO traffic
 - Added installment billing, lifting payment success rate 15%
 - Rolled out researcher & professional pricing tiers, adding $482K ARR
